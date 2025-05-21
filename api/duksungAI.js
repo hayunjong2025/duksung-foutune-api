@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 dotenv.config();
 const ai = new GoogleGenAI({apiKey: process.env.GEMINI_API_KEY})
 export default async function handler(req, res) {
-  const allowedOrigin = "https://hayunjong2025.github.io/duksung-fortune/"
+  const allowedOrigin = "https://hayunjong2025.github.io"
 
   res.setHeader("Access-Control-Allow-Origin", allowedOrigin);
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
